@@ -124,22 +124,34 @@ header nav ul {
   display: flex;
   align-items: center;
   justify-content: flex-end;
+  transition: transform 0.3s;
 }
 
 header nav .ul-showen {
   display: flex;
   flex-direction: column;
   position: absolute;
+  transition: 0.5s;
   top: 100%;
   left: 0;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.5);
   align-items: stretch;
+  transform: translateY(0);
 }
 
 @media (max-width: 768px) {
   header nav ul {
-    display: none;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    transition: 0.5s;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    align-items: stretch;
+    transform: translateY(-473%);
   }
 }
 
@@ -266,7 +278,7 @@ header nav ul a[href="#contact"] {
 }
 
 .landing .popup:hover p {
-  display: block;
+  transform: scale(1);
 }
 
 .landing .popup p {
@@ -279,7 +291,8 @@ header nav ul a[href="#contact"] {
   position: fixed;
   font-size: 13px;
   width: 98px;
-  display: none;
+  transform: scale(0);
+  transition: 0.3s;
 }
 
 .landing .popup p::before {
@@ -304,11 +317,20 @@ header nav ul a[href="#contact"] {
   height: 385px;
   left: 30px;
   z-index: 100;
+  transition: transform 0.3s,
+  display 0.1s;
 }
 
 @media (max-width: 768px) {
   .landing .social {
-    display: none;
+    display: flex;
+    top: calc(50% + -72px);
+    left: 11px;
+    background-color: #00000085;
+    height: 242px;
+    width: 47px;
+    border-radius: 7px;
+    transform: translateY(-50%) scale(0);
   }
   .landing .popup {
     display: block;
@@ -328,7 +350,8 @@ header nav ul a[href="#contact"] {
   height: 242px;
   width: 47px;
   border-radius: 7px;
-  transition: 0.3s;
+  transition: transform 0.3s;
+  transform: translateY(-50%) scale(1);
 }
 
 .landing .social-showned::before {
@@ -346,7 +369,7 @@ header nav ul a[href="#contact"] {
   width: 60px;
   text-align: center;
   border-radius: 50%;
-  transition: color 0.3s backgroung-color 0.3s;
+  transition: 0.3s;
 }
 
 .landing .social div i {
