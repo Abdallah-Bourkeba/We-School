@@ -969,12 +969,13 @@ header nav ul a[href="#contact"] {
   right: 25px;
   bottom: 25px;
   z-index: 9999;
-  display: none;
+  transition: 0.3s;
+  transform: scale(0);
 }
 
 .float span {
   background: linear-gradient(to right, #038ad1 50%, #00a7ff 50%) no-repeat
-    scroll right bottom/210% 100% #00a7ff;
+  scroll right bottom/210% 100% #00a7ff;
   -webkit-transition: all ease 0.3s;
   -moz-transition: all ease 0.3s;
   transition: all ease 0.3s;
@@ -992,6 +993,20 @@ header nav ul a[href="#contact"] {
   font-size: 21px;
   position: relative;
   top: 8px;
+}
+
+@media (max-width: 768px) {
+  .float {
+    width: 30px;
+    height: 30px;
+  }
+  .float span:before {
+    font-size: 15px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
 }
 
 .float span:hover {

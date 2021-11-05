@@ -83,13 +83,48 @@ document.forms[0].onsubmit = function (event) {
   event.preventDefault();
 };
 // End Subscribe
+// Start Contact Us
+// document.forms[1].onsubmit = function (e) {
+//   e.preventDefault();
+// };
+// function sendEmail() {
+// let fromEmail = document.querySelector(".content [type='email']").value;
+// let fromName = document.querySelector(".content [type='text']").value;
+// let bodyMail = document.querySelector(".content textarea").value;
+// let formSbmit = document.querySelector(".content [type='submit']");
+
+//   console.log(fromName);
+//   console.log(fromEmail);
+//   console.log(bodyMail);
+
+//   Email.send({
+//     // Host: "smtp.yourisp.com",
+//     // Username: "abdallah.mohamed.text@gmail.com",
+//     // Password: "011aa28aa30aa5666aa",
+//     SecureToken: "5db3e776-2273-4409-8325-dc10b5ba357d",
+//     To: "abdallah.mohamed.text@gmail.com",
+//     From: "01128305666v@gmail.com",
+//     Subject: "This is the subject",
+//     Body: bodyMail,
+//   }).then(function () {
+//     alert("E-mail Sennt Succesfally");
+//   });
+// }
+// formSbmit.addEventListener("click", () => {
+//   Email.send({
+//     SecureToken : "0ce12054-6da3-4715-a152-021d5c481518",
+//     To: "abdallah.mohamed.text@gmail.com",
+//     From: "01128305666v@gmail.com",
+//   }).then((msg) => console.log("Done"));
+// });
+// End Contact Us
 // Start Scroll To Top
 let float = document.querySelector("body > .float");
 window.onscroll = function () {
   if (window.scrollY >= 500) {
-    float.style.cssText = "display: block;";
+    float.style.cssText = "transform: scale(1);";
   } else {
-    float.style.cssText = "display: none;";
+    float.style.cssText = "transform: scale(0);";
   }
 };
 float.onclick = function () {
