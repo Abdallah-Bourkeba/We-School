@@ -40,8 +40,3 @@ Contributions are what make the open source community such an amazing place to l
 
 Distributed under the MIT License. See `LICENSE.txt` for more information.
 
-## Contact
-
-Your Name - [@YourTwitter](https://twitter.com/YourTwitter) - YourEmail@example.com
-
-Project Link: [https://github.com/Abdallah-Bourkeba/We-School](https://github.com/Abdallah-Bourkeba/We-School)
