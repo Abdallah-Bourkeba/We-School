@@ -1,6 +1,6 @@
 # We-School
 
-It is a website for We-School built with HTML, CSS, and JavaScript. The website includes all images in SVG format and has a responsive design.
+This website for We-School is expertly crafted using HTML, CSS, and JavaScript, offering a modern, fully responsive design for optimal viewing across various devices. The site incorporates high-quality SVG images, ensuring crisp visuals and fast load times. Its user-friendly interface and dynamic content make it accessible and engaging for all visitors, providing a seamless browsing experience.
 
 ## Features
 
